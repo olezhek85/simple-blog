@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": ["react", "import", "jsx-a11y", "prettier"],
+  "parser": "babel-eslint",
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-console": 1
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx"]
+      }
+    },
+    "react": {
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
